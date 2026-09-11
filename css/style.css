@@ -5,3 +5,16 @@
 .video-play-hidden{opacity:0!important;visibility:hidden!important;transition:opacity .2s ease,visibility .2s ease}.hero-play,.testi-play{transition:opacity .2s ease,visibility .2s ease}
 
 @media(max-width:520px){.brand-lockup{gap:8px}.brand-mark{width:31px;height:35px}.brand-name{font-size:.78rem;letter-spacing:.09em}}
+
+
+/* Controles y validación */
+.hero-video-control{z-index:3;cursor:pointer;pointer-events:auto;font-family:inherit;appearance:none;-webkit-appearance:none;transition:transform .2s ease,background .2s ease,opacity .2s ease}.hero-video-control:hover{transform:translate(-50%,-50%) scale(1.06);background:#1f1e44}.hero-control-icon{line-height:1;font-size:.82em;letter-spacing:-3px}.field-error{min-height:0;color:#b32727;font-size:.86rem;font-weight:700;margin:8px 0}.invalid-field{border-color:#c0392b!important;background:#fff8f7!important}.form-msg{font-weight:700;line-height:1.55}.form-msg.error{border-color:#c0392b;background:#fff7f6;color:#8d2520}.form-msg.ok{border-color:var(--green);background:#f6f8ef;color:#344019}.form-brand-head .brand-name{color:var(--white);text-transform:none;font-weight:500}.form-brand-head .brand-mark{filter:brightness(0) invert(1)}
+@media(max-width:520px){.form-brand-head .brand-name{font-size:.78rem;letter-spacing:.1em}.form-brand-head .brand-mark{width:31px;height:35px}.hero-video-control{width:62px;height:62px}}
+
+/* Ajustes finales: control del video y separador del formulario */
+.hero-video-control.hero-control-hidden{opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,-50%) scale(.92)}
+.form-brand-head{background:var(--white);color:var(--blue);border-bottom:4px solid rgba(255,255,255,.18);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.form-brand-head .brand,.form-brand-head .brand-name{color:var(--blue)!important}
+.form-brand-head .brand-mark{filter:none!important}
+.form-brand-head .pill-outline{color:var(--blue);border-color:var(--blue)}
+.form-brand-head .pill-outline:hover{background:var(--blue);color:var(--white)}
